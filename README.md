@@ -12,18 +12,28 @@ Site published at: https://front-end-by-rimantas.github.io/29a-grupe-elvish-port
 
 Design: https://themesboss.com/elvish/index_6.html
 
-Project features
-Github pages
-multi-page
-content rendering with JS
-carousel
-gallery
-fontawesome icons
-CSS animations
-CSS import
-JS import-export
-Authors:
-Gediminas Puplevičius https://github.com/GedasPupa
-Vadim Šaranov https://github.com/vadimsharanov
-Karolis Lukošiūnas https://github.com/KarolisLuko
-Mantas Juodelis https://github.com/MantasDot
+
+
+
+
+
+## Project features
+
+- Github pages
+- multi-page
+- content rendering with JS
+- carousel
+- gallery
+- fontawesome icons
+- CSS animations
+- CSS import
+- JS import-export
+
+
+
+
+## Authors:
+Gediminas Puplevičius [Github](https://github.com/GedasPupa)
+Vadim Šaranov [Github](https://github.com/vadimsharanov)
+Karolis Lukošiūnas [Github](https://github.com/KarolisLuko)
+Mantas Juodelis [Github](https://github.com/MantasDot)
