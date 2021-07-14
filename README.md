@@ -33,7 +33,7 @@ Design: https://themesboss.com/elvish/index_6.html
 
 
 ## Authors:
-Gediminas Puplevičius [Github](https://github.com/GedasPupa)
-Vadim Šaranov [Github](https://github.com/vadimsharanov)
-Karolis Lukošiūnas [Github](https://github.com/KarolisLuko)
+Gediminas Puplevičius [Github](https://github.com/GedasPupa);
+Vadim Šaranov [Github](https://github.com/vadimsharanov);
+Karolis Lukošiūnas [Github](https://github.com/KarolisLuko);
 Mantas Juodelis [Github](https://github.com/MantasDot)
