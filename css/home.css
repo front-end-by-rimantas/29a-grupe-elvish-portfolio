@@ -29,6 +29,12 @@
     /* EDUCATION end */
 
     /* HIRE ME start */
+    .backgroundHM {
+        background-image: url(/HireME.png);
+        width: 100%;
+        height: 50vh;
+
+    }
     /* HIRE ME end */
 
     /* OUR WORK start */

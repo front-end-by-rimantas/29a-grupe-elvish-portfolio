@@ -1,0 +1,11 @@
+.hireme > button {
+
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: solid;
+    border-color:white;
+    color: white;
+    padding: 10px;
+    font-style:italic;
+    cursor:pointer;
+}
