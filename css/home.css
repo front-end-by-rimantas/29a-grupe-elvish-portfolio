@@ -7,6 +7,9 @@
 
 /* components */
 @import './components/button.css';
+@import './components/services.css';
+@import './components/title-text.css';
+
 
 /* CUSTOM STYLE FOR HOME PAGE */
 
@@ -20,6 +23,9 @@
     /* ABOUT ME end */
 
     /* SERVICES start */
+    .container > .row > .p-services {
+        grid-column-start: 2;
+    }
     /* SERVICES end */
 
     /* WORKING HOURS start */

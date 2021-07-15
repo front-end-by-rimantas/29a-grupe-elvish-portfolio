@@ -1,0 +1,16 @@
+.services {
+    background-color: #F7F8F9;
+}
+
+.item-center {
+    justify-self: center;
+}
+
+.icon {
+    width: 45px;
+}
+
+.h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
