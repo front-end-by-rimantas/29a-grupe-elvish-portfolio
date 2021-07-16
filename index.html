@@ -7,9 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>elvish | responsive bootstrap 4 personal template</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/6a296c83b0.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
+    <header >
+                <img class="Elivishs" src="./img/logo-dark.png" > </img>
+               
+                <nav>
+                   
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Education</a>
+                    <a href="#">Work</a>
+                    <a href="#">Client</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </header>
+            <div id="particles-js" class="fl">
+                <div class="fl screen-center text-style">
+                        <div class="title-clm">
+                            <div class="Hello"  >
+                            <h1  >Hello & Welcome</h1>
+                            </div>
+                            <div class="row">
+                                <p>I Am </p>
+                                <span 
+                                    class="screen-center txt-rotate dinamic-text-style" 
+                                    data-period="2000"
+                                    data-rotate='[ "A Developer.","A Designer.", "Elivish Walters."]'>
+                                </span>
+                                
+                            </div>
+                             <div class="Font">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <i class="fab fa-google-plus-g"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-github"></i>
+                                </div> 
+                                <button class=" cv ">Download CV</button>
+                        </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        
+       
     <!-- HEADER start -->
     <!-- HEADER end -->
 
@@ -52,7 +101,13 @@
     <!-- FOOTER start -->
     <!-- FOOTER end -->
 
+    
+     <!-- Import Particles.js and app.js files -->
+     <script src="/node_modules/particles.js/particles.js"></script>
     <script src="./js/home.js" type="module" defer></script>
+    <script>
+          particlesJS.load('particles-js','../particles.json');
+    </script>
 </body>
 
 </html>

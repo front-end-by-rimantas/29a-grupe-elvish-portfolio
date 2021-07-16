@@ -11,5 +11,8 @@
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
