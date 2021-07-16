@@ -1,0 +1,22 @@
+.elvish-logo {
+    padding-bottom: 50px;
+}
+
+.about-me-title > .col-12 > ul{
+display: flex;
+flex-direction: row;
+gap: 30px;
+justify-content: center;
+margin: 20px 0;
+font-size: 20px;
+color: #6C757D;
+}
+
+.ui-designer {
+    list-style-type: none;
+}
+
+.about-statistics {
+
+}
+
