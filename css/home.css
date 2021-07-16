@@ -2,14 +2,13 @@
 @import './base/reset.css';
 @import './base/variables.css';
 @import './base/layout.css';
+@import './base/base.css';
 
 /* 3rd-party */
 
 /* components */
 @import './components/button.css';
 @import './components/services.css';
-@import './components/title-text.css';
-
 
 /* CUSTOM STYLE FOR HOME PAGE */
 
@@ -23,9 +22,11 @@
     /* ABOUT ME end */
 
     /* SERVICES start */
-    .container > .row > .p-services {
-        grid-column-start: 2;
-    }
+    @media (min-width: 1080px) {
+        .container > .row > .title {
+          grid-column-start: 3;
+        }
+      }
     /* SERVICES end */
 
     /* WORKING HOURS start */
