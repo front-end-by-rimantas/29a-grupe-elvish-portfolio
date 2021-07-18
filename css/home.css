@@ -9,6 +9,7 @@
 /* components */
 @import './components/button.css';
 @import './components/services.css';
+@import './components/education.css';
 
 /* CUSTOM STYLE FOR HOME PAGE */
 
@@ -23,16 +24,21 @@
 
     /* SERVICES start */
     @media (min-width: 1080px) {
-        .container > .row > .title {
-          grid-column-start: 3;
-        }
+      .container > .row > .title {
+        grid-column-start: 3;
       }
+    }
     /* SERVICES end */
 
     /* WORKING HOURS start */
     /* WORKING HOURS end */
 
     /* EDUCATION start */
+    @media (min-width: 1080px) {
+      .container > .row > .lg-5-start {
+        grid-column-start: 8;
+      }
+    }
     /* EDUCATION end */
 
     /* HIRE ME start */

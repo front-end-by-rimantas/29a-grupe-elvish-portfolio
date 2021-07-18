@@ -1,0 +1,17 @@
+.border-ed {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    border-radius: 7px;
+    padding: 20px 35px;
+}
+
+.h4 {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.small {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0;
+}
