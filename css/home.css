@@ -23,10 +23,15 @@
 
     /* SERVICES start */
     @media (min-width: 1080px) {
-        .container > .row > .title {
-          grid-column-start: 3;
-        }
+      .container > .row > .title {
+        grid-column-start: 3;
       }
+    }
+    @media (min-width: 1200px) {
+      .container > .row > .title {
+        grid-column-start: 4;
+      }
+    }
     /* SERVICES end */
 
     /* WORKING HOURS start */
