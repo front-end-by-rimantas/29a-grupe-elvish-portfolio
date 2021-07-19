@@ -1,15 +1,22 @@
 {
-  "name": "29a-grupe-portfolio",
+  "name": "29a-grupe-elvish",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
+  "description": "First team project. Recreating design and functionality of https://themesboss.com/elvish/index_6.html",
+  "main": "home.js",
+    "scripts": {
+      "serv" : "live-server --port=3333",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Rimantas Belovas",
+  "keywords": [
+    "design",
+    "functionality",
+    "css",
+    "grid"
+  ],
+  "author": "Gediminas Puplevičius, Vadim Šaranov, Karolis Lukošiūnas, Mantas Juodelis",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
   }
 }
+

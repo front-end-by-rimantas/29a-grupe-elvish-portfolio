@@ -1,0 +1,39 @@
+.title {
+    margin-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.h2 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.main-title-border {
+    margin: 1rem 0;
+}
+
+.main-title-border::after, .main-title-border::before {
+    display: inline-block;
+    margin-top: -7px;
+    vertical-align: middle;
+    content: "";
+    background-color: #d0d0d0;
+    width: 30px;
+    height: 1px;
+}
+
+.asterix {
+    width: 1.2rem;
+}
+
+.p {
+    color: #6C757D;
+}
+
