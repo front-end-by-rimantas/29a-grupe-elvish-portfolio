@@ -20,6 +20,16 @@
     /* HERO end */
 
     /* ABOUT ME start */
+    @media (min-width: 1080px) {
+      .container > .row > .about-hello {
+        grid-column-start: 2;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container > .row > .about-hello {
+        grid-column-start: 3;
+      }
+    }
     /* ABOUT ME end */
 
     /* SERVICES start */
