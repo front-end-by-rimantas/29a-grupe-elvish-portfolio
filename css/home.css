@@ -27,9 +27,10 @@
     }
     @media (min-width: 1200px) {
       .container > .row > .about-hello {
-        grid-column-start: 3;
+        grid-column-start: 2;
       }
     }
+
     /* ABOUT ME end */
 
     /* SERVICES start */

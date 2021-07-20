@@ -26,7 +26,35 @@ color: #6C757D;
     list-style-type: none;
 }
 
-.about-statistics {
+.about-progress-bar {
 
 }
+
+ /* ne galutinis variantas */
+.container > .about-progress-bar > .col-12  {
+    padding: 10px;
+  }
+.container > .about-progress-bar > .col-12 > .myProgress {
+    width: 100%;
+    background-color: #E9ECEF
+  }
+.container > .about-progress-bar >.col-12 > .myProgress> .myBar {
+    width: 90%;
+    height: 5px;
+    background-color: #000
+  }
+.container > .about-progress-bar >.col-12 > h4  {
+    font-weight:550 ;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+.container > .about-progress-bar >.col-12 > h4 > span {
+    float: right;
+    font-weight: 300;
+    color: #71757D
+};
+  }
+
+
+
 
