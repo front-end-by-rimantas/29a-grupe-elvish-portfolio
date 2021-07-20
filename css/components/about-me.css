@@ -1,0 +1,60 @@
+
+.about-me {
+
+}
+
+.about-hello {
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+.elvish-logo {
+    padding-bottom: 50px;
+}
+
+.about-me-title > .col-12 > ul{
+display: flex;
+flex-direction: row;
+gap: 30px;
+justify-content: center;
+margin: 20px 0;
+font-size: 20px;
+color: #6C757D;
+}
+
+.ui-designer {
+    list-style-type: none;
+}
+
+.about-progress-bar {
+
+}
+
+ /* ne galutinis variantas */
+.container > .about-progress-bar > .col-12  {
+    padding: 10px;
+  }
+.container > .about-progress-bar > .col-12 > .myProgress {
+    width: 100%;
+    background-color: #E9ECEF
+  }
+.container > .about-progress-bar >.col-12 > .myProgress> .myBar {
+    width: 90%;
+    height: 5px;
+    background-color: #000
+  }
+.container > .about-progress-bar >.col-12 > h4  {
+    font-weight:550 ;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+.container > .about-progress-bar >.col-12 > h4 > span {
+    float: right;
+    font-weight: 300;
+    color: #71757D
+};
+  }
+
+
+
+
