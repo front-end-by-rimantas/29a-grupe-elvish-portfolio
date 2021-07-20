@@ -10,6 +10,8 @@
 @import './components/button.css';
 @import './components/services.css';
 @import './components/education.css';
+@import './components/working-hours.css';
+
 
 /* CUSTOM STYLE FOR HOME PAGE */
 
@@ -26,6 +28,11 @@
     @media (min-width: 1080px) {
       .container > .row > .title {
         grid-column-start: 3;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container > .row > .title {
+        grid-column-start: 4;
       }
     }
     /* SERVICES end */
