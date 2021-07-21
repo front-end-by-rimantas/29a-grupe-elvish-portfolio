@@ -1,0 +1,23 @@
+.services {
+    background-color: #F7F8F9;
+}
+
+.item-center {
+    justify-self: center;
+}
+
+.icon {
+    width: 42px;
+}
+
+.h3 {
+    font-size: 1.5rem;
+    padding: 1.7rem 0 0.8rem 0;
+}
+
+.border {
+    width: 100%;
+    border: 1px dotted #d0d0d0;
+    border-radius: 4px;
+    padding: 30px 20px;
+}
