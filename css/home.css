@@ -29,28 +29,7 @@
     /* EDUCATION end */
 
     /* HIRE ME start */
-    .backgroundHM {
-        background-image: url(/HireME.png);
-        background-size: cover;
-        position: fixed;
-        width: 100%;
-        height: 40vh;
-
-    }
-    .hireme {
-        margin: 0;
-        padding: 0;
-        vertical-align: top;
-        box-sizing: border-box;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     }
-    
-    .hireme > h1 {
-        color: white;
-        text-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        margin-top: 40px; 
-    } 
+   @import './components/hireme.css';
     /* HIRE ME end */
 
     /* OUR WORK start */
