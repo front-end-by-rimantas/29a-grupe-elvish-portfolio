@@ -2,35 +2,43 @@ const headerData = {
     selector: 'header nav',
     structure:[ {
         title:"Home",
-        href:"#"
+        href:"#",
+        class:""
     },
     {
         title:"About",
-        href:"#"
+        href:"#about-me",
+        class:""
     },
     {
         title:"Services",
-        href:"#"
+        href:"#services",
+        class:""
     },
     {
         title:"Education",
-        href:"#"
+        href:"#education",
+        class:""
     },
     {
         title:"Work",
-        href:"#"
+        href:"#education",
+        class:""
     },
     {
         title:"Client",
-        href:"#"
+        href:"#education",
+        class:""
     },
     {
         title:"Blog",
-        href:"#"
+        href:"#education",
+        class:""
     },
     {
         title:"Contact",
-        href:"#"
+        href:"#education",
+        class:""
     },]
 }
 
