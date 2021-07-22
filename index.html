@@ -8,6 +8,7 @@
     <title>Elvish | Responsive Bootstrap 4 Personal Template</title>
     <link rel="shortcut icon" href="./img/favicon-32x32.png">
     <link rel="stylesheet" href="./css/home.css">
+    <script src="https://kit.fontawesome.com/6a296c83b0.js" crossorigin="anonymous"></script>    
 </head>
 
 <body>
@@ -32,6 +33,35 @@
     <!-- HEADER end -->
 
     <!-- HERO start -->
+        <section class="hero">
+        <div class="overlay-hero"></div>
+        <div id="particles-js" class="fl">
+            <div class="fl screen-center text-style col-12">
+                <div class="title-clm">
+                    <div class="Hello"  >
+                        <h1>Hello & Welcome</h1>
+                    </div>
+                    <div class="iam">
+                        <p class="p-hero">I Am </p>
+                        <span 
+                            class="screen-center txt-rotate dinamic-text-style" 
+                            data-period="2000"
+                            data-rotate='[ "A Developer.","A Designer.", "Elivish Walters."]'>
+                        </span>
+                        
+                    </div>
+                    <div class="Font">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div> 
+                    <button class=" cv ">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- HERO end -->
 
     <!-- ABOUT ME start -->
@@ -255,7 +285,11 @@
 
     <!-- FOOTER start -->
     <!-- FOOTER end -->
-
+    
+    <script src="/node_modules/particles.js/particles.js"></script>
+    <script>
+          particlesJS.load('particles-js','../particles.json');
+    </script>
     <script src="./js/home.js" type="module" defer></script>
 </body>
 
