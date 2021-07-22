@@ -3,42 +3,42 @@ const headerData = {
     structure:[ {
         title:"Home",
         href:"#",
-        class:"empty"
+        class:""
     },
     {
         title:"About",
         href:"#about-me",
-        class:"empty"
+        class:""
     },
     {
         title:"Services",
         href:"#services",
-        class:"empty"
+        class:""
     },
     {
         title:"Education",
         href:"#education",
-        class:"empty"
+        class:""
     },
     {
         title:"Work",
         href:"#education",
-        class:"empty"
+        class:""
     },
     {
         title:"Client",
         href:"#education",
-        class:"empty"
+        class:""
     },
     {
         title:"Blog",
         href:"#education",
-        class:"empty"
+        class:""
     },
     {
         title:"Contact",
         href:"#education",
-        class:"empty"
+        class:""
     },]
 }
 
