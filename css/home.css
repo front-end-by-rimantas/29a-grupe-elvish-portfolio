@@ -5,37 +5,71 @@
 @import './base/base.css';
 
 /* 3rd-party */
-
+@import './3rd-party/font-awesome.min.css';
 /* components */
 @import './components/button.css';
+@import './components/header.css';
 @import './components/services.css';
+@import './components/hireme.css';
+@import './components/hero.css';
+@import './components/about-me.css';
+@import './components/education.css';
+@import './components/working-hours.css';
+
 
 /* CUSTOM STYLE FOR HOME PAGE */
 
     /* HEADER start */
+    @media (min-width: 1200px) {
+      .main-header > .row > .col-12 { 
+        grid-column-start: ;
+      }
+    }
     /* HEADER end */
 
     /* HERO start */
     /* HERO end */
 
     /* ABOUT ME start */
+    @media (min-width: 1080px) {
+      .container > .row > .about-hello {
+        grid-column-start: 2;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container > .row > .about-hello {
+        grid-column-start: 2;
+      }
+    }
+
     /* ABOUT ME end */
 
     /* SERVICES start */
     @media (min-width: 1080px) {
-        .container > .row > .title {
-          grid-column-start: 3;
-        }
+      .container > .row > .title {
+        grid-column-start: 3;
       }
+    }
+    @media (min-width: 1200px) {
+      .container > .row > .title {
+        grid-column-start: 4;
+      }
+    }
     /* SERVICES end */
 
     /* WORKING HOURS start */
     /* WORKING HOURS end */
 
     /* EDUCATION start */
+    @media (min-width: 1080px) {
+      .container > .row > .lg-5-start {
+        grid-column-start: 8;
+      }
+    }
     /* EDUCATION end */
 
     /* HIRE ME start */
+   
     /* HIRE ME end */
 
     /* OUR WORK start */

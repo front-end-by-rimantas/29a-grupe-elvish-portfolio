@@ -1,0 +1,41 @@
+.border-ed {
+    position: relative;
+    width: 90%;
+    border: 1px solid #e7e7e7;
+    border-radius: 7px;
+    padding: 20px 35px;
+}
+
+.border-ed::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -27.5px;
+    top: -20px;
+    height: 120%;
+    width: 2px;
+    background-color: #e7e7e7;
+}
+
+.h4 {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.small {
+    position: relative;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.small::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -70px;
+    top: 2px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #000;
+}
