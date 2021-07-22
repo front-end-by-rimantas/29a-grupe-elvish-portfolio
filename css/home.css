@@ -5,9 +5,10 @@
 @import './base/base.css';
 
 /* 3rd-party */
-
+@import './3rd-party/font-awesome.min.css';
 /* components */
 @import './components/button.css';
+@import './components/header.css';
 @import './components/services.css';
 @import './components/hero.css';
 @import './components/about-me.css';
@@ -18,6 +19,11 @@
 /* CUSTOM STYLE FOR HOME PAGE */
 
     /* HEADER start */
+    @media (min-width: 1200px) {
+      .main-header > .row > .col-12 { 
+        grid-column-start: ;
+      }
+    }
     /* HEADER end */
 
     /* HERO start */
