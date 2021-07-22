@@ -9,7 +9,7 @@
 /* components */
 @import './components/button.css';
 @import './components/services.css';
-
+@import './components/hireme.css';
 @import './components/about-me.css';
 @import './components/education.css';
 @import './components/working-hours.css';
@@ -62,7 +62,7 @@
     /* EDUCATION end */
 
     /* HIRE ME start */
-   @import './components/hireme.css';
+   
     /* HIRE ME end */
 
     /* OUR WORK start */
