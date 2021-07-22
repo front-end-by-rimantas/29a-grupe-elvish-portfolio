@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "First team project. Recreating design and functionality of https://themesboss.com/elvish/index_6.html",
   "main": "home.js",
-    "scripts": {
-      "serv" : "live-server --port=3333",
+  "scripts": {
+    "serv": "live-server --port=3333",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,6 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
-
