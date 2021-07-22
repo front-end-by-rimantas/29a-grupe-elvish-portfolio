@@ -1,9 +1,15 @@
 // IMPORTS
 import { count1, count2, count3, count4 } from "./data-count.js";
+import { Header } from "./header/Header.js";
+import { headerData } from "./header/headerData.js"; 
 
 // CODE EXECUTION
 
 /* HEADER start */
+const header = new Header(headerData)
+header.init()
+console.log(header);
+
 /* HEADER end */
 
 /* HERO start */
