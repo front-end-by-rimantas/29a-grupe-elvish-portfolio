@@ -10,6 +10,7 @@
 @import './components/button.css';
 @import './components/header.css';
 @import './components/services.css';
+@import './components/hireme.css';
 @import './components/hero.css';
 @import './components/about-me.css';
 @import './components/education.css';
@@ -68,6 +69,7 @@
     /* EDUCATION end */
 
     /* HIRE ME start */
+   
     /* HIRE ME end */
 
     /* OUR WORK start */
