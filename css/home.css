@@ -15,6 +15,7 @@
 @import './components/about-me.css';
 @import './components/education.css';
 @import './components/working-hours.css';
+@import './components/gallery.css';
 
 
 /* CUSTOM STYLE FOR HOME PAGE */
@@ -22,7 +23,7 @@
     /* HEADER start */
     @media (min-width: 1200px) {
       .main-header > .row > .col-12 { 
-        grid-column-start: ;
+        grid-column-start: 1;
       }
     }
     /* HEADER end */

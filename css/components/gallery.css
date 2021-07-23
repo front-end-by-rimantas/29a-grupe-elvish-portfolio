@@ -1,11 +1,31 @@
-.gallery {
+.work {
+    padding-bottom: 30px;
+}
+
+.gallery > .container {
+    padding-top: 30px;
+}
+
+.gallery > .filter {
+    display: flex;
+    justify-content: center;
+    /* width: 200px; */
 
 }
 
-.gallery > .content {
+.gallery > .filter > .tag {
+    margin: 0 20px;
+}
+.gallery > .filter > .tag:hover {
+}
+
+.gallery .content > .item {
+    border: 1px solid black;
+    border-radius: 4px;
+    overflow: hidden;
 
 }
 
-.gallery > .content > .item {
-    
+.gallery > .content > .item:hover {
+
 }
