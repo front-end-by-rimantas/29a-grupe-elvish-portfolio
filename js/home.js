@@ -100,7 +100,7 @@ count4(data4, data4, 'fact-4');
 /* HIRE ME end */
 
 /* OUR WORK start */
-new Gallery('gallery_block', portfolioData);
+new Gallery('work', portfolioData);
 /* OUR WORK end */
 
 /* OUR CLIENT start */

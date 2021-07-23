@@ -2,38 +2,53 @@
     padding-bottom: 30px;
 }
 
-.gallery {
-    padding-top: 10px;
-}
-
 .tags {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-.gallery .tag {
+.work .tag {
     margin: 0 12px;
-    padding: 5px 15px;
+    padding: 4px 15px;
     border: 1px solid black;
     border-radius: 4px;
     color: #222;
     background-color: #fff;
     transition: all 0.5s;
 }
-.gallery .tag:hover, .gallery .tag.active {
+.work .tag:hover, .work .tag.active {
     background-color: #222;
     color: #fff;
     cursor: pointer;
 }
 
-.gallery .content > .item {
+.work .content > .item {
     border: 1px solid black;
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
+    min-height: 270px;
+}
+
+.work .item > p {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 22px;
+}
+.work .item > .lower-p {
+    top: 22px;
+    font-size: 16px;
 
 }
 
-.gallery > .content > .item:hover {
-
+.work .item  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    width: fit-content;
 }

@@ -40,21 +40,16 @@ class Gallery {
             return false;
         }
         // imgPath type
-        // const path = this.data.imgPath;
         if (typeof path !== 'string' ||
             path === '') {
             return false;
         }
-
-        // list
-        // const list = this.data.list;
+        // list type
         if (!Array.isArray(list) ||
             list.length === 0) {
             return false;
         }
-
         // maxItems update
-        // const max = this.data.maxItems;
         if (typeof max === 'number' &&
             isFinite(max) &&
             max > 0 &&
@@ -62,7 +57,6 @@ class Gallery {
             this.maxItems = max;
         }
         // renderStrategy update
-        // const strat = this.data.renderStrategy;
         if (typeof strat === 'string' &&
             strat !== '' &&
             this.renderStrategyOptions.includes(strat)) {
@@ -78,7 +72,40 @@ class Gallery {
     }
 
     render() {
-        console.log(this.data.list);
+        const HTML = `<div class="row filter">
+                        <div class="tags col-12">
+                            <div class="tag active">All</div>
+                            <div class="tag">Dog</div>
+                            <div class="tag">Cat</div>
+                            <div class="tag">Bird</div>
+                        </div>
+                    </div>
+                    <div class="row content">
+                        ${this.generateContentHTML()}
+                    </div>`;
+        this.DOM.innerHTML += HTML;
+    }
+
+    generateContentHTML() {
+        let HTML = ``;
+        let count = 0;
+        for (let item in this.data.list) {
+            if (!true) {
+                continue;
+            }
+            HTML += `<div class="item col-12 col-lg-4">
+                        <p class="upper-p">${this.data.list[item].title}</p>
+                        <p class="lower-p">${this.data.list[item].tags.join(', ')}</p>
+                        <img src=${this.data.imgPath + this.data.list[item].img} />                    
+                    </div>`
+                    
+            count++;
+            console.log(count);
+            if (count == this.maxItems) {
+                break;
+            }
+        }
+        return HTML;
     }
 }
 
