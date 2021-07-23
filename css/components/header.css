@@ -1,3 +1,7 @@
+html {
+scroll-behavior:smooth
+}
+
 #main_header {
     padding: 0;
     padding:25px 0;
