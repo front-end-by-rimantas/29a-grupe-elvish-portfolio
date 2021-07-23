@@ -1,20 +1,20 @@
 "use strict"
 import { headerData } from "./headerData.js";
 
-
-
+// ieskom elemento auksti
 function elementHeight(path) {
    let height = parseFloat(window.getComputedStyle(document.querySelector('header')).height);
     return height
 }
 
+//funkcija, kuri surenka informacija apie tai, kurioje puslapio dalyje yra vartotojas
 function headerScrollDetector() {  
 
     let activeSectionIndex =  0;  
-    var sections = [];
-    var top;
-    var top1;
-    var scroll = window.scrollY + elementHeight('header')
+    let sections = [];
+    let top;
+    let top1;
+    let scroll = window.scrollY + elementHeight('header')
     
     for (let i=0; i < headerData.structure.length; i++) {
         
@@ -32,12 +32,8 @@ function headerScrollDetector() {
         else {
             break
         }
-        console.log(activeSectionIndex);
 
     }
-    // console.log(activeSectionIndex);
-    // console.log(sections);
-    // console.log(scroll);
  let links = document.querySelectorAll("nav a");
  let clName = '';
  for (let i=0; i < links.length; i++) {
@@ -47,9 +43,4 @@ function headerScrollDetector() {
     }
     links[activeSectionIndex].className += 'active'
  }
-
-
-
-window.addEventListener("scroll", headerScrollDetector)
-
 export {headerScrollDetector}
