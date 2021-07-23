@@ -2,21 +2,29 @@
     padding-bottom: 30px;
 }
 
-.gallery > .container {
-    padding-top: 30px;
+.gallery {
+    padding-top: 10px;
 }
 
-.gallery > .filter {
+.tags {
     display: flex;
     justify-content: center;
-    /* width: 200px; */
-
+    margin-bottom: 20px;
 }
 
-.gallery > .filter > .tag {
-    margin: 0 20px;
+.gallery .tag {
+    margin: 0 12px;
+    padding: 5px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #222;
+    background-color: #fff;
+    transition: all 0.5s;
 }
-.gallery > .filter > .tag:hover {
+.gallery .tag:hover, .gallery .tag.active {
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
 }
 
 .gallery .content > .item {
