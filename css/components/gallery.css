@@ -5,7 +5,9 @@
 .tags {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    /* margin: 20px ; */
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .work .tag {
@@ -16,6 +18,7 @@
     color: #222;
     background-color: #fff;
     transition: all 0.5s;
+    text-transform: capitalize;
 }
 .work .tag:hover, .work .tag.active {
     background-color: #222;
@@ -40,8 +43,8 @@
     font-size: 22px;
 }
 .work .item > .lower-p {
-    top: 22px;
-    font-size: 16px;
+    top: 23px;
+    font-size: 17px;
 
 }
 

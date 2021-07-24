@@ -12,7 +12,7 @@ const portfolioData = {
         {
             img: '2.jpg',
             title: 'Creative & Art',
-            tags: ['Illustrations'],
+            tags: ['illustrations'],
             viewsCount: 14
         },
         {
@@ -30,7 +30,7 @@ const portfolioData = {
         {
             img: '5.jpg',
             title: 'Mac Sunglasses',
-            tags: ['Illustrations', 'Graphics'],
+            tags: ['Illustrations', 'graphics'],
             viewsCount: 8
         },
         {
@@ -46,7 +46,7 @@ const portfolioData = {
             viewsCount: 333
         },
         {
-            img: '2.jpg',
+            img: '8.jpg',
             title: 'Music & Soul',
             tags: ['Illustrations'],
             viewsCount: 14

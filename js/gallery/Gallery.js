@@ -7,6 +7,7 @@ class Gallery {
         this.renderStrategyOptions = ['first', 'last', 'mostViews', 'leastViews', 'random'];
         this.renderStrategy = this.renderStrategyOptions[0];
         this.maxItems = 6;
+        this.collectedItems = [];
 
         this.init();
     }
@@ -72,40 +73,71 @@ class Gallery {
     }
 
     render() {
-        const HTML = `<div class="row filter">
-                        <div class="tags col-12">
-                            <div class="tag active">All</div>
-                            <div class="tag">Dog</div>
-                            <div class="tag">Cat</div>
-                            <div class="tag">Bird</div>
-                        </div>
-                    </div>
-                    <div class="row content">
-                        ${this.generateContentHTML()}
-                    </div>`;
+        const HTML = `${this.generateFilterHTML()}
+                      ${this.generateContentHTML()}`;
         this.DOM.innerHTML += HTML;
     }
 
     generateContentHTML() {
-        let HTML = ``;
+        let contentHTML = '';
         let count = 0;
         for (let item in this.data.list) {
             if (!true) {
                 continue;
             }
-            HTML += `<div class="item col-12 col-lg-4">
-                        <p class="upper-p">${this.data.list[item].title}</p>
-                        <p class="lower-p">${this.data.list[item].tags.join(', ')}</p>
-                        <img src=${this.data.imgPath + this.data.list[item].img} />                    
-                    </div>`
-                    
+            contentHTML += `
+                        <div class="item col-12 col-lg-4">
+                            <p class="upper-p">${this.data.list[item].title}</p>
+                            <p class="lower-p">${this.data.list[item].tags.join(', ')}</p>
+                            <img src=${this.data.imgPath + this.data.list[item].img} />                    
+                        </div>
+                    `;
             count++;
-            console.log(count);
             if (count == this.maxItems) {
                 break;
             }
         }
+        const HTML = `<div class="row content">
+                        ${contentHTML}
+                    </div>`; 
         return HTML;
+    }
+
+    generateFilterHTML() {
+        const tags = this.collectTags();
+        if (tags.length === 0) {
+            return '';
+        }
+        let tagsHTML = `<div class="tag active">All</div>`;
+        for (let tag of tags) {
+            tagsHTML += `<div class="tag">${tag}</div>`;
+        };
+
+        const HTML = `<div class="row filter">
+                        <div class="tags col-12">
+                        ${tagsHTML}
+                        </div>
+                    </div>`
+        return HTML;
+    }
+
+    collectTags() {
+        let tags = [];
+        let uniqueTags = [];
+        let uniqueTagsCase = [];
+        for (const tag of this.data.list) {
+            tags = [...tags, ...tag.tags];
+        }
+        for (const tag of tags) {
+            if (!uniqueTags.includes(tag.toLowerCase())) {
+                uniqueTags.push(tag.toLowerCase());
+                uniqueTagsCase.push(tag);
+            }
+        }
+        console.log(uniqueTagsCase);
+
+        return uniqueTagsCase;
+
     }
 }
 
