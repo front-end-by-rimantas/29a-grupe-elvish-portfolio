@@ -4,6 +4,10 @@ import { Header } from "./header/Header.js";
 import { headerData } from "./header/headerData.js"; 
 import { headerScrollDetector} from "./header/headerScrollFunction.js"; 
 import { headerStyle } from "./header/headerTransparentStyle.js";
+import { clientData } from "./client/clientData.js";
+import { renderClient } from "./client/client.js";
+import { showSlides } from "./client/slideShowFunction.js";
+
 
 // CODE EXECUTION
 
@@ -109,6 +113,9 @@ count4(data4, data4, 'fact-4');
 /* OUR WORK end */
 
 /* OUR CLIENT start */
+renderClient('#client_dynamic', clientData);
+showSlides('#client_dynamic', clientData);
+
 /* OUR CLIENT end */
 
 /* TRUSTED BY start */
