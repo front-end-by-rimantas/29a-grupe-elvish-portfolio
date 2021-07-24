@@ -31,7 +31,7 @@
     border-radius: 4px;
     overflow: hidden;
     position: relative;
-    min-height: 270px;
+    min-height: 500px;
 }
 
 .work .item > p {
@@ -52,6 +52,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
-    width: fit-content;
+    transform: translate(-50%, -50%) scale(0.9);
+    /* width: fit-content; */
 }

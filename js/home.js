@@ -2,6 +2,7 @@
 import { count1, count2, count3, count4 } from "./data-count.js";
 import { portfolioData } from "./data/portfolioData.js";
 import { Gallery } from "./gallery/Gallery.js";
+import { PortfolioItem } from "./gallery/PortfolioItem.js";
 import { Header } from "./header/Header.js";
 import { headerData } from "./header/headerData.js"; 
 import { headerScrollDetector} from "./header/headerScrollFunction.js"; 
@@ -100,7 +101,7 @@ count4(data4, data4, 'fact-4');
 /* HIRE ME end */
 
 /* OUR WORK start */
-new Gallery('work', portfolioData);
+new Gallery('work', portfolioData, PortfolioItem);
 /* OUR WORK end */
 
 /* OUR CLIENT start */

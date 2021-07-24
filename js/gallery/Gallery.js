@@ -1,24 +1,41 @@
 class Gallery {
-    constructor(selector, data) {
+    constructor(selector, data, itemClass) {
         this.selector = selector;
         this.data = data;
+        this.itemClass = itemClass;
 
         this.DOM = null;
-        this.renderStrategyOptions = ['first', 'last', 'mostViews', 'leastViews', 'random'];
-        this.renderStrategy = this.renderStrategyOptions[0];
+        // this.renderStrategyOptions = ['first', 'last', 'mostViews', 'leastViews', 'random'];
+        this.renderStrategyOptions = {
+            first: this.collectItemsFirst.bind(this),
+            last: this.collectItemsLast.bind(this),
+            mostViews: this.collectItemsMostViews.bind(this),
+            leastViews: this.collectItemsLeastViews.bind(this),
+            random: this.collectItemsRandom.bind(this),
+        };
+        this.renderStrategy =  
+            Object.keys(this.renderStrategyOptions).includes('first') ?
+            'first' :
+            Object.keys(this.renderStrategyOptions)[0]
+        ;
         this.maxItems = 6;
         this.collectedItems = [];
+        this.filteredItems = [];
 
+        // this.collectItemsFirst() = this.collectItemsFirst.bind(this);
+        // this.itemClass = itemClass.bind(this);
         this.init();
     }
 
     init() {
         if (!this.isValidSelector() ||
             !this.isValidData() ||
-            !this.findTargetDOM()) {
+            !this.findTargetDOM() ||
+            !this.collectValidItems() ) {
             return false;
         }
 
+        this.collectItems();
         this.render();
     }
 
@@ -60,7 +77,7 @@ class Gallery {
         // renderStrategy update
         if (typeof strat === 'string' &&
             strat !== '' &&
-            this.renderStrategyOptions.includes(strat)) {
+            Object.keys(this.renderStrategyOptions).includes(strat)) {
             this.renderStrategy = strat;
         }
 
@@ -72,6 +89,60 @@ class Gallery {
         return !!this.DOM;
     }
 
+    collectValidItems() {
+        for (let item of this.data.list) {
+            if (this.itemClass.isValid(item)) {
+                this.collectedItems.push(item);
+            }
+        }       
+        return !!this.collectedItems.length;
+    }
+
+    collectItems() {
+        this.renderStrategyOptions[this.renderStrategy]();
+    }
+
+    collectItemsFirst() {
+        if (this.collectedItems.length <= this.maxItems) {
+            this.filteredItems = this.collectedItems;
+        } else {
+            this.filteredItems = this.collectedItems.slice(0, this.maxItems);
+        }
+    }
+
+    collectItemsLast() {
+        if (this.collectedItems.length <= this.maxItems) {
+            this.filteredItems = this.collectedItems;
+        } else {
+            this.filteredItems = this.collectedItems.slice(-this.maxItems);
+        } 
+    }
+
+    collectItemsMostViews() {
+        this.collectedItems = this.collectedItems.sort((a, b) => 
+            b.viewsCount - a.viewsCount
+        );
+        this.filteredItems = this.collectedItems.slice(0, this.maxItems);
+    }
+
+    collectItemsLeastViews() {
+        this.collectedItems = this.collectedItems.sort((a, b) => 
+        a.viewsCount - b.viewsCount
+        );
+        this.filteredItems = this.collectedItems.slice(0, this.maxItems);
+    }
+    
+    collectItemsRandom() {
+        while (this.filteredItems.length < this.maxItems &&
+            this.filteredItems.length < this.collectedItems.length) {
+            const rand = Math.floor(Math.random() * this.collectedItems.length);
+            if (!this.filteredItems.includes(this.collectedItems[rand])) {
+                this.filteredItems.push(this.collectedItems[rand]);
+            }
+        }
+        console.log(this.filteredItems);
+    }
+
     render() {
         const HTML = `${this.generateFilterHTML()}
                       ${this.generateContentHTML()}`;
@@ -81,15 +152,12 @@ class Gallery {
     generateContentHTML() {
         let contentHTML = '';
         let count = 0;
-        for (let item in this.data.list) {
-            if (!true) {
-                continue;
-            }
+        for (let item in this.filteredItems) {
             contentHTML += `
                         <div class="item col-12 col-lg-4">
-                            <p class="upper-p">${this.data.list[item].title}</p>
-                            <p class="lower-p">${this.data.list[item].tags.join(', ')}</p>
-                            <img src=${this.data.imgPath + this.data.list[item].img} />                    
+                            <p class="upper-p">${this.filteredItems[item].title}</p>
+                            <p class="lower-p">${this.filteredItems[item].tags.join(', ')}</p>
+                            <img src=${this.data.imgPath + this.filteredItems[item].img} />                    
                         </div>
                     `;
             count++;
@@ -110,9 +178,8 @@ class Gallery {
         }
         let tagsHTML = `<div class="tag active">All</div>`;
         for (let tag of tags) {
-            tagsHTML += `<div class="tag">${tag}</div>`;
+            tagsHTML += `<div class="tag" onclick="funkcija()">${tag}</div>`;
         };
-
         const HTML = `<div class="row filter">
                         <div class="tags col-12">
                         ${tagsHTML}
@@ -125,7 +192,7 @@ class Gallery {
         let tags = [];
         let uniqueTags = [];
         let uniqueTagsCase = [];
-        for (const tag of this.data.list) {
+        for (const tag of this.filteredItems) {
             tags = [...tags, ...tag.tags];
         }
         for (const tag of tags) {
@@ -134,10 +201,7 @@ class Gallery {
                 uniqueTagsCase.push(tag);
             }
         }
-        console.log(uniqueTagsCase);
-
         return uniqueTagsCase;
-
     }
 }
 
