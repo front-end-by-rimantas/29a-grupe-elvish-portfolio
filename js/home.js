@@ -109,7 +109,7 @@ count4(data4, data4, 'fact-4');
 /* WORKING HOURS end */
 
 /* EDUCATION start */
-new Education('education_box', educationData);
+const education = new Education("education_box", educationData);
 /* EDUCATION end */
 
 /* HIRE ME start */
