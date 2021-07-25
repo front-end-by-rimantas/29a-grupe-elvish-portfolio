@@ -10,6 +10,8 @@ import { headerStyle } from "./header/headerTransparentStyle.js";
 import { clientData } from "./client/clientData.js";
 import { renderClient } from "./client/client.js";
 import { showSlides } from "./client/slideShowFunction.js";
+import { Education } from "./education/Education.js";
+import { educationData } from "./data/educationData.js";
 
 
 // CODE EXECUTION
@@ -107,6 +109,7 @@ count4(data4, data4, 'fact-4');
 /* WORKING HOURS end */
 
 /* EDUCATION start */
+const education = new Education("education_box", educationData);
 /* EDUCATION end */
 
 /* HIRE ME start */
