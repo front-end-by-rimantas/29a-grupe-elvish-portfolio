@@ -1,0 +1,83 @@
+.filter {
+    margin: 35px 0;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.work .tag {
+    margin: 0 12px;
+    padding: 4px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: #222;
+    background-color: #fff;
+    transition: all 0.5s;
+    text-transform: capitalize;
+}
+.work .tag:hover, .work .tag.active {
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.work .content > .item {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    min-height: 500px;
+}
+
+.work .item-overlay > p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 22px;
+}
+
+.work .item-overlay > .lower-p {
+    top: 23px;
+    font-size: 17px;
+}
+
+.work .item  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    height: inherit;
+    transition: all 0.5s;
+}
+.work .item:hover  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.item-overlay {
+    color: transparent;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 7px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+}
+.item-overlay:hover {
+    color: #fff;
+    background-color: #111;
+    opacity: 0.8;
+    border-radius: 7px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
