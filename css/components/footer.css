@@ -1,14 +1,14 @@
 #footer {
     margin: 0;
     padding: 20px;
-
+    justify-self: center;
     background-color: #f8f9fa;  
 }
 
 .col-12.footer {
   display: flex;
   justify-content: space-between;
-  justify-self: center;
+
 }
 
 .footer-paragraph {
