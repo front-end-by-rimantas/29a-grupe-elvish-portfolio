@@ -101,7 +101,7 @@ count4(data4, data4, 'fact-4');
 /* HIRE ME end */
 
 /* OUR WORK start */
-new Gallery('work', portfolioData, PortfolioItem);
+const gallery = new Gallery('work', portfolioData, PortfolioItem);
 /* OUR WORK end */
 
 /* OUR CLIENT start */

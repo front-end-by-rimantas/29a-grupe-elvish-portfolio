@@ -6,19 +6,19 @@ const portfolioData = {
         {
             img: '1.jpg',
             title: 'Studio & Art',
-            tags: ['UI Elements', 'icons'],
+            tags: ['UI Elements', 'Icons'],
             viewsCount: 10
         },
         {
             img: '2.jpg',
             title: 'Creative & Art',
-            tags: ['illustrations'],
+            tags: ['Illustrations'],
             viewsCount: 14
         },
         {
             img: '3.jpg',
             title: 'Open Imagination',
-            tags: ['media', 'Icons'],
+            tags: ['Media', 'Icons'],
             viewsCount: 1
         },
         {
@@ -30,7 +30,7 @@ const portfolioData = {
         {
             img: '5.jpg',
             title: 'Mac Sunglasses',
-            tags: ['Illustrations', 'graphics'],
+            tags: ['Illustrations', 'Graphics'],
             viewsCount: 8
         },
         {
@@ -54,7 +54,7 @@ const portfolioData = {
         {
             img: '9.jpg',
             title: 'Open Mind',
-            tags: ['media', 'Icons'],
+            tags: ['Media', 'Icons'],
             viewsCount: 552
         },
         {
@@ -66,7 +66,7 @@ const portfolioData = {
         {
             img: '11.jpg',
             title: 'Diff Look',
-            tags: ['icons', 'Graphics'],
+            tags: ['Icons', 'Graphics'],
             viewsCount: 833
         },
         {

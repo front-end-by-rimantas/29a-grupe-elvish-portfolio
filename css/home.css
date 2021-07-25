@@ -80,8 +80,10 @@
       }
       .work .item  img {
         transform: translate(-50%, -50%) scale(0.5);
-        /* width: fit-content; */
-    }
+      }
+      .work .item:hover  img {
+        transform: translate(-50%, -50%) scale(0.55);
+      }
     }
     /* OUR WORK end */
 

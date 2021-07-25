@@ -5,7 +5,10 @@ class Gallery {
         this.itemClass = itemClass;
 
         this.DOM = null;
-        // this.renderStrategyOptions = ['first', 'last', 'mostViews', 'leastViews', 'random'];
+        this.tagsDOM = null;
+        this.itemsDOM = null;
+        this.worksDOM = null;
+
         this.renderStrategyOptions = {
             first: this.collectItemsFirst.bind(this),
             last: this.collectItemsLast.bind(this),
@@ -21,9 +24,9 @@ class Gallery {
         this.maxItems = 6;
         this.collectedItems = [];
         this.filteredItems = [];
+        this.tempItems = [];
+        this.tempTemp = [];
 
-        // this.collectItemsFirst() = this.collectItemsFirst.bind(this);
-        // this.itemClass = itemClass.bind(this);
         this.init();
     }
 
@@ -36,7 +39,10 @@ class Gallery {
         }
 
         this.collectItems();
+        this.tempItems = this.filteredItems;
+
         this.render();
+        this.addEvents();
     }
 
     isValidSelector() {
@@ -140,24 +146,31 @@ class Gallery {
                 this.filteredItems.push(this.collectedItems[rand]);
             }
         }
-        console.log(this.filteredItems);
     }
 
     render() {
         const HTML = `${this.generateFilterHTML()}
-                      ${this.generateContentHTML()}`;
+                        <div class="row content" id="gallery_box">
+                            ${this.generateContentHTML()}
+                        </div>
+                    `;
         this.DOM.innerHTML += HTML;
+        this.tagsDOM = this.DOM.querySelectorAll('.tag');
+        this.itemsDOM = this.DOM.querySelectorAll('.item');
     }
 
     generateContentHTML() {
         let contentHTML = '';
         let count = 0;
-        for (let item in this.filteredItems) {
+        for (let item in this.tempItems) {
             contentHTML += `
-                        <div class="item col-12 col-lg-4">
-                            <p class="upper-p">${this.filteredItems[item].title}</p>
-                            <p class="lower-p">${this.filteredItems[item].tags.join(', ')}</p>
-                            <img src=${this.data.imgPath + this.filteredItems[item].img} />                    
+                        <div class="item item-img col-12 col-lg-4">
+                            <img src=${this.data.imgPath + this.tempItems[item].img} />                    
+
+                            <div class="item-overlay">
+                                <p class="upper-p">${this.tempItems[item].title}</p>
+                                <p class="lower-p">${this.tempItems[item].tags.join(', ')}</p>
+                            </div>
                         </div>
                     `;
             count++;
@@ -165,9 +178,9 @@ class Gallery {
                 break;
             }
         }
-        const HTML = `<div class="row content">
+        const HTML = `
                         ${contentHTML}
-                    </div>`; 
+                    `; 
         return HTML;
     }
 
@@ -176,9 +189,9 @@ class Gallery {
         if (tags.length === 0) {
             return '';
         }
-        let tagsHTML = `<div class="tag active">All</div>`;
+        let tagsHTML = `<div class="tag active all">All</div>`;
         for (let tag of tags) {
-            tagsHTML += `<div class="tag" onclick="funkcija()">${tag}</div>`;
+            tagsHTML += `<div class="tag">${tag}</div>`;
         };
         const HTML = `<div class="row filter">
                         <div class="tags col-12">
@@ -198,10 +211,41 @@ class Gallery {
         for (const tag of tags) {
             if (!uniqueTags.includes(tag.toLowerCase())) {
                 uniqueTags.push(tag.toLowerCase());
+                // let tagUpper = tag.split('');
+                // tagUpper[0] = tagUpper[0].toUpperCase();
+                // tagUpper = tagUpper.join('');
                 uniqueTagsCase.push(tag);
             }
         }
         return uniqueTagsCase;
+    }
+
+    addEvents() {
+        for (const tagDom of this.tagsDOM) {
+            tagDom.addEventListener('click', () => {
+                this.tempTemp = [];
+                for (let i in this.filteredItems) {
+                    if (this.filteredItems[i].tags.includes(tagDom.textContent)) {
+                        this.tempTemp.push(this.filteredItems[i]);
+                    }
+                }
+                this.tempItems = this.tempTemp;
+                this.renderWorks();
+                // tagDom.classList.add('.active');
+                // this.rederFilter();
+            })
+        }
+        this.DOM.querySelector('.all').addEventListener('click', () => {
+            this.tempItems = this.filteredItems;
+            this.renderWorks();
+        })
+    }
+
+    renderWorks() {
+        this.worksDOM = document.getElementById('gallery_box');
+        const HTML = `${this.generateContentHTML()}`;
+        this.worksDOM.innerHTML = HTML;
+        // this.itemsDOM = this.DOM.querySelectorAll('.item');
     }
 }
 
