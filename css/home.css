@@ -17,6 +17,7 @@
 @import './components/working-hours.css';
 @import './components/our-client.css';
 @import './components/gallery.css';
+@import './components/footer.css';
 
 
 
@@ -31,6 +32,14 @@
     /* HEADER end */
 
     /* HERO start */
+    @media (max-width: 640px) {
+      .dinamic-text-style {
+          font-size: 40px;
+      }
+      .p-hero {
+          font-size: 40px;
+      }
+  }
     /* HERO end */
 
     /* ABOUT ME start */
@@ -105,4 +114,14 @@
     /* GET IN TOUCH end */
 
     /* FOOTER start */
+    @media (min-width: 640px) {
+      .container > .row > .footer.socials {
+        justify-self: flex-end;
+      }
+    }
+    @media (min-width: 640px) {
+      .container > .row > .footer.paragraph {
+        justify-self: flex-start;
+      }
+    }
     /* FOOTER end */
