@@ -119,4 +119,9 @@
         justify-self: flex-end;
       }
     }
+    @media (min-width: 640px) {
+      .container > .row > .footer.paragraph {
+        justify-self: flex-start;
+      }
+    }
     /* FOOTER end */

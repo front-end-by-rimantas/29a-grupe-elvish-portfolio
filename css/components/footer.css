@@ -5,9 +5,14 @@
     background-color: #f8f9fa;  
 }
 
+.row-footer {
+    /* justify-items:center ; */
+}
+
 .col-12.footer {
   display: flex;
   justify-content: space-between;
+  justify-self: center;
 
 }
 
