@@ -34,7 +34,7 @@
     /* HERO end */
 
     /* ABOUT ME start */
-    @media (min-width: 1080px) {
+    @media (min-width: 990px) {
       .container > .row > .about-hello {
         grid-column-start: 2;
       }
@@ -48,7 +48,7 @@
     /* ABOUT ME end */
 
     /* SERVICES start */
-    @media (min-width: 1080px) {
+    @media (min-width: 990px) {
       .container > .row > .title {
         grid-column-start: 3;
       }
@@ -64,7 +64,7 @@
     /* WORKING HOURS end */
 
     /* EDUCATION start */
-    @media (min-width: 1080px) {
+    @media (min-width: 990px) {
       .container > .row > .lg-5-start {
         grid-column-start: 8;
       }
@@ -76,7 +76,7 @@
     /* HIRE ME end */
 
     /* OUR WORK start */
-    @media (min-width: 1080px) {
+    @media (min-width: 990px) {
       .work .content > .item {
        min-height: 270px;
       }
