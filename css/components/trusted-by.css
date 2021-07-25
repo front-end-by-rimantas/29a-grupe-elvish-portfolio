@@ -1,0 +1,17 @@
+#trusted-by {
+    background-color: #F8F9FA;
+
+}
+.col-trusted {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.col-trusted > img {
+    width: auto;
+    max-height: 100px;
+}
+
+
