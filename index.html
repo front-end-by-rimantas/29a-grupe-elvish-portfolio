@@ -8,24 +8,18 @@
     <title>Elvish | Responsive Bootstrap 4 Personal Template</title>
     <link rel="shortcut icon" href="./img/favicon-32x32.png">
     <link rel="stylesheet" href="./css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6a296c83b0.js" crossorigin="anonymous"></script>    
 </head>
 
 <body>
     <!-- HEADER start -->
-    <header class="container main-header" id="main_header">
+    <header class="container main-header transparent" id="main_header">
         <div class="row">
             <div class="col-12">
-                <img class="logo" src="./img/elvish-nav-logo.png" alt="log">
+                <a href=""> <img id="logo_dark" class="logo-dark" src="./img/elvish-nav-logo-dark.png" alt="logo-dark"></a>
+                <a href=""> <img id="logo_light" class="logo-light" src="./img/elvish-nav-logo-light.png" alt="logo-light"></a>
                 <nav>
-                    <!-- <a href="#"> Home </a> -->
-                    <!-- <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Education</a>
-                    <a href="#">Work</a>
-                    <a href="#">Client</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a> -->
                 </nav>
             </div>
         </div>
@@ -33,9 +27,9 @@
     <!-- HEADER end -->
 
     <!-- HERO start -->
-        <section class="hero" id="hero">
+    <section class="container hero" id="hero">
         <div class="overlay-hero"></div>
-        <div id="particles-js" class="fl">
+        <div id="particles-js" class="row fl">
             <div class="fl screen-center text-style col-12">
                 <div class="title-clm">
                     <div class="Hello"  >
@@ -46,7 +40,7 @@
                         <span 
                             class="screen-center txt-rotate dinamic-text-style" 
                             data-period="2000"
-                            data-rotate='[ "A Developer.","A Designer.", "Elivish Walters."]'>
+                            data-rotate='[ "A Developer.","A Designer.", "Elvish Walters."]'>
                         </span>
                         
                     </div>
@@ -81,7 +75,7 @@
         <div class="row about-me-title" >
             <div class="col-12 col-lg-10 col-xl-10 text-center about-hello">
             <div class="elvish-logo">
-                <img src="./img/elvish-logo.png" alt="elvish-logo">
+                <img src="./img/about-me-elvish-logo.png" alt="elvish-logo">
             </div>
             <h2 class="h2">Hello! <span class="bold">I'M Elvish Walters.</span></h2>
             <ul>
@@ -270,15 +264,105 @@
         <button type="button">Hire me !</button>
       </div>
      </div>
+    </div>
+
     <!-- HIRE ME end -->
 
     <!-- OUR WORK start -->
+    <section class="container work" id="work">
+        <div class="row">
+            <div class="col-12 col-lg-8 col-xl-6 text-center title">
+                <h2 class="h2">Our <span class="bold">Work</span></h2>
+                <div class="main-title-border">
+                    <img src="./img/asterix.png" class="asterix" />
+                </div> 
+                <p class="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+    </section>
     <!-- OUR WORK end -->
 
     <!-- OUR CLIENT start -->
+<section id="client" class="container">
+    <div class="background-rgb"></div>
+        <div class="row">
+            <div class="col-12 col-lg-8 col-xl-6 text-center title col-client">
+                <h1 class="h1-client">Our Client</h1>
+                <div class="main-title-border">
+                    <img src="./img/asterix.png" alt="asterix" class="asterix-client">
+                </div>
+                <p class="p p-client">It is a long established 
+                    fact that a reader will be distracted 
+                    by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+    <div class="row">
+        <div id="client_dynamic" class="col-12 col-lg-8 col-xl-6 text-center title col-client">  
+            <div>
+                
+              </div> 
+        </div>
+    </div>
+    <div class="row">
+        <div  class="col-12 col-lg-8 col-xl-6 text-center title col-client">  
+            <div>
+                <a id="slide1" href="#slide1"span class="dot" ></a>
+                <a id="slide2" href="#slide2"span class="dot" ></a>
+                <a id="slide3" href="#slide3"span class="dot" ></a>
+            
+              </div> 
+              </div> 
+        </div>
+    </div>
+    
+</section>
     <!-- OUR CLIENT end -->
 
     <!-- TRUSTED BY start -->
+    <section class="container" id="trusted-by">
+        <div class="row ">
+            <div class="col-12 col-lg-8 col-xl-6 text-center title">
+                <h2 class="h2">Trusted by <span class="bold">Great People</span></h2>
+                <div class="main-title-border">
+                    <img src="./img/asterix.png" class="asterix" />
+                </div> 
+                <p class="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/1.png" alt="freash-beans">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/2.png" alt="fisherman">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/3.png" alt="mountain-bike">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/4.png" alt="mountain-winter-sports">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/5.png" alt="chocolate">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/6.png" alt="market">
+            </div>
+            
+
+
+
+                
+                
+                
+                
+        </div>
+            
+
+
+            
+    </section>
     <!-- TRUSTED BY end -->
 
     <!-- SUBSCRIBE start -->
@@ -291,14 +375,30 @@
     <!-- GET IN TOUCH end -->
 
     <!-- FOOTER start -->
+    <div class="container" id="footer">
+        <div class="row row-footer">
+            <div class="col-12 col-sm-6 footer paragraph"><p class="footer-paragraph"> 2018 &#169; Elvish . Design by ThemesBoss.</p>
+            </div>
+                    
+                 <div class="col-12 col-sm-6 footer socials">
+                    <div class="footer-socials">
+                        <a class="footer-button" href="#"><i class="fa fa-facebook fa-xs"></i></a>
+                        <a class="footer-button" href="#"><i class="fa fa-twitter fa-xs"></i></a>
+                        <a class="footer-button" href="#"><i class="fa fa-linkedin fa-xs"></i></a>
+                        <a class="footer-button" href="#"><i class="fa fa-google-plus fa-xs"></i></a>
+                    </div>
+                </div>
+        </div>
+    
+        </div>
+    </div>
     <!-- FOOTER end -->
     
-    <script src="/node_modules/particles.js/particles.js"></script>
+    <script src="./particles.js/particles.js"></script>
     <script>
           particlesJS.load('particles-js','../particles.json');
     </script>
     <script src="./js/home.js" type="module" defer></script>
-    <script src="./js/header/headerScrollFunction.js" type="module"></script>
 </body>
 
 </html>

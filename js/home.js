@@ -1,18 +1,33 @@
 // IMPORTS
 import { count1, count2, count3, count4 } from "./data-count.js";
+import { portfolioData } from "./data/portfolioData.js";
+import { Gallery } from "./gallery/Gallery.js";
+import { PortfolioItem } from "./gallery/PortfolioItem.js";
 import { Header } from "./header/Header.js";
 import { headerData } from "./header/headerData.js"; 
 import { headerScrollDetector} from "./header/headerScrollFunction.js"; 
+import { headerStyle } from "./header/headerTransparentStyle.js";
+import { clientData } from "./client/clientData.js";
+import { renderClient } from "./client/client.js";
+import { showSlides } from "./client/slideShowFunction.js";
+
 
 // CODE EXECUTION
 
 /* HEADER start */
+
+// kontento generavimas
 const header = new Header(headerData)
 header.init()
 
-
-
+// puslapio buvimo vietos nustatymas
+window.addEventListener("scroll", function () {
+  headerScrollDetector();
+  headerStyle()
+})
 /* HEADER end */
+
+
 
 /* HERO start */
 var TxtRotate = function(el, toRotate, period) {
@@ -98,9 +113,13 @@ count4(data4, data4, 'fact-4');
 /* HIRE ME end */
 
 /* OUR WORK start */
+const gallery = new Gallery('work', portfolioData, PortfolioItem);
 /* OUR WORK end */
 
 /* OUR CLIENT start */
+renderClient('#client_dynamic', clientData);
+showSlides('#client_dynamic', clientData);
+
 /* OUR CLIENT end */
 
 /* TRUSTED BY start */

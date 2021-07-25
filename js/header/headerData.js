@@ -3,7 +3,7 @@ const headerData = {
     structure:[ {
         title:"Home",
         href:"#",
-        class:""
+        class:"active"
     },
     {
         title:"About",
@@ -22,24 +22,25 @@ const headerData = {
     },
     {
         title:"Work",
-        href:"#education",
+        href:"#work",
         class:""
     },
     {
         title:"Client",
-        href:"#education",
+        href:"#client",
         class:""
     },
-    {
-        title:"Blog",
-        href:"#education",
-        class:""
-    },
+    // {
+    //     title:"Blog",
+    //     href:"#blog",
+    //     class:""
+    // },
     {
         title:"Contact",
-        href:"#education",
+        href:"#contact",
         class:""
-    },]
+    },
+]
 }
 
 export { headerData }

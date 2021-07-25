@@ -15,6 +15,11 @@
 @import './components/about-me.css';
 @import './components/education.css';
 @import './components/working-hours.css';
+@import './components/our-client.css';
+@import './components/gallery.css';
+@import './components/trusted-by.css';
+@import './components/footer.css';
+
 
 
 /* CUSTOM STYLE FOR HOME PAGE */
@@ -22,16 +27,24 @@
     /* HEADER start */
     @media (min-width: 1200px) {
       .main-header > .row > .col-12 { 
-        grid-column-start: ;
+        grid-column-start: 1;
       }
     }
     /* HEADER end */
 
     /* HERO start */
+    @media (max-width: 640px) {
+      .dinamic-text-style {
+          font-size: 40px;
+      }
+      .p-hero {
+          font-size: 40px;
+      }
+  }
     /* HERO end */
 
     /* ABOUT ME start */
-    @media (min-width: 1080px) {
+    @media (min-width: 990px) {
       .container > .row > .about-hello {
         grid-column-start: 2;
       }
@@ -45,7 +58,7 @@
     /* ABOUT ME end */
 
     /* SERVICES start */
-    @media (min-width: 1080px) {
+    @media (min-width: 990px) {
       .container > .row > .title {
         grid-column-start: 3;
       }
@@ -61,7 +74,7 @@
     /* WORKING HOURS end */
 
     /* EDUCATION start */
-    @media (min-width: 1080px) {
+    @media (min-width: 990px) {
       .container > .row > .lg-5-start {
         grid-column-start: 8;
       }
@@ -73,6 +86,17 @@
     /* HIRE ME end */
 
     /* OUR WORK start */
+    @media (min-width: 990px) {
+      .work .content > .item {
+       min-height: 270px;
+      }
+      .work .item  img {
+        transform: translate(-50%, -50%) scale(0.5);
+      }
+      .work .item:hover  img {
+        transform: translate(-50%, -50%) scale(0.55);
+      }
+    }
     /* OUR WORK end */
 
     /* OUR CLIENT start */
@@ -91,4 +115,14 @@
     /* GET IN TOUCH end */
 
     /* FOOTER start */
+    @media (min-width: 640px) {
+      .container > .row > .footer.socials {
+        justify-self: flex-end;
+      }
+    }
+    @media (min-width: 640px) {
+      .container > .row > .footer.paragraph {
+        justify-self: flex-start;
+      }
+    }
     /* FOOTER end */
