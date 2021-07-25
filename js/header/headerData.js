@@ -30,16 +30,17 @@ const headerData = {
         href:"#client",
         class:""
     },
-    {
-        title:"Blog",
-        href:"#blog",
-        class:""
-    },
+    // {
+    //     title:"Blog",
+    //     href:"#blog",
+    //     class:""
+    // },
     {
         title:"Contact",
         href:"#contact",
         class:""
-    },]
+    },
+]
 }
 
 export { headerData }
