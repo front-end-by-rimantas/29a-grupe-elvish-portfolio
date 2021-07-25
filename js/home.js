@@ -6,16 +6,24 @@ import { PortfolioItem } from "./gallery/PortfolioItem.js";
 import { Header } from "./header/Header.js";
 import { headerData } from "./header/headerData.js"; 
 import { headerScrollDetector} from "./header/headerScrollFunction.js"; 
+import { headerStyle } from "./header/headerTransparentStyle.js";
 
 // CODE EXECUTION
 
 /* HEADER start */
+
+// kontento generavimas
 const header = new Header(headerData)
 header.init()
 
-
-
+// puslapio buvimo vietos nustatymas
+window.addEventListener("scroll", function () {
+  headerScrollDetector();
+  headerStyle()
+})
 /* HEADER end */
+
+
 
 /* HERO start */
 var TxtRotate = function(el, toRotate, period) {
