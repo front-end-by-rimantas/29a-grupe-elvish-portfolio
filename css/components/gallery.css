@@ -1,9 +1,5 @@
-.work {
-    padding-bottom: 30px;
-}
-
 .filter {
-    margin-bottom: 20px;
+    margin: 35px 0;
 }
 
 .tags {
@@ -43,6 +39,7 @@
     margin: 20px;
     font-size: 22px;
 }
+
 .work .item-overlay > .lower-p {
     top: 23px;
     font-size: 17px;
