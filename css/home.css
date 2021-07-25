@@ -32,6 +32,14 @@
     /* HEADER end */
 
     /* HERO start */
+    @media (max-width: 640px) {
+      .dinamic-text-style {
+          font-size: 40px;
+      }
+      .p-hero {
+          font-size: 40px;
+      }
+  }
     /* HERO end */
 
     /* ABOUT ME start */
