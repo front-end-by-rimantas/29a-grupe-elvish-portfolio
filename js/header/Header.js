@@ -10,7 +10,6 @@ class Header {
         if(!this.isValidSelector()) {
             return false
         }
-        console.log("tesiam darba");
         this.render()
     }
 
