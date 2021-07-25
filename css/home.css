@@ -16,6 +16,8 @@
 @import './components/education.css';
 @import './components/working-hours.css';
 @import './components/our-client.css';
+@import './components/gallery.css';
+
 
 
 /* CUSTOM STYLE FOR HOME PAGE */
@@ -23,7 +25,7 @@
     /* HEADER start */
     @media (min-width: 1200px) {
       .main-header > .row > .col-12 { 
-        grid-column-start: ;
+        grid-column-start: 1;
       }
     }
     /* HEADER end */
@@ -74,6 +76,17 @@
     /* HIRE ME end */
 
     /* OUR WORK start */
+    @media (min-width: 1080px) {
+      .work .content > .item {
+       min-height: 270px;
+      }
+      .work .item  img {
+        transform: translate(-50%, -50%) scale(0.5);
+      }
+      .work .item:hover  img {
+        transform: translate(-50%, -50%) scale(0.55);
+      }
+    }
     /* OUR WORK end */
 
     /* OUR CLIENT start */
