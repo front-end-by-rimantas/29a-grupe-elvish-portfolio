@@ -13,38 +13,55 @@
 }
 
 .CForm {
-   
+   width: 100%;
     
 }
 
 .form {
-   
+    display: inline-block;
+    width: 100%;
 
 }
 
 .form-row > label {
     font-size: 24px;
-    width: 52%;
+    width: 5%;
+    
 }
 
 .form-row > input {
-    width: 45%;
+    display: inline-block;
+    width: 40%;
     line-height: 40px;
     font-size: 20px;
-    border: gray;
-    border-bottom: 1px solid #ccc;
-}
-.form-row > input:last-of-type {
-    width: 100%;
+    border: 3px solid #ccc;
+    gap: 6%;
+    
     
 }
+.form-row:nth-child(1) {
+    
+}
+
+.form-row:nth-child(2) {
+    
+   
+}
+.form-row:nth-child(3) > input {
+    width: 100%;
+}
+
 
 
 .form-row > textarea {
     color: red;
     width: 100%;
-    padding: 40px;
+    border: 3px solid #ccc;
+    font-size: 20px;
+    text-align: left;
+    padding: 0.4em 0.4em 0.4em 0;
 }
+
 
 
 
