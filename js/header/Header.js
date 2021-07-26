@@ -45,7 +45,8 @@ class Header {
             if ( !this.isValidHeaderItem(item)) {
                 return '';
             }
-            HTML += `<a href="${item.href}" class=${item.class}> ${item.title} </a>`;
+            HTML += `<a href="${item.href}" class=${item.class}> ${item.title} </a>
+            `;
 
         }
         this.DOM.innerHTML = HTML

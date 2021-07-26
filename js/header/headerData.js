@@ -3,32 +3,32 @@ const headerData = {
     structure:[ {
         title:"Home",
         href:"#",
-        class:"active"
+        class:"nav-link active"
     },
     {
         title:"About",
         href:"#about-me",
-        class:""
+        class:"nav-link "
     },
     {
         title:"Services",
         href:"#services",
-        class:""
+        class:"nav-link "
     },
     {
         title:"Education",
         href:"#education",
-        class:""
+        class:"nav-link "
     },
     {
         title:"Work",
         href:"#work",
-        class:""
+        class:"nav-link "
     },
     {
         title:"Client",
         href:"#client",
-        class:""
+        class:"nav-link "
     },
     // {
     //     title:"Blog",
@@ -37,7 +37,7 @@ const headerData = {
     // },
     {
         title:"Contact",
-        href:"#contact",
+        href:"#footer",
         class:""
     },
 ]
