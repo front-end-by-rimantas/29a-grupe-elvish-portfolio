@@ -14,6 +14,8 @@ import { Education } from "./education/Education.js";
 import { educationData } from "./data/educationData.js";
 import { Services } from "./services/Services.js";
 import { servicesData } from "./data/servicesData.js";
+import { Progress } from "./progress/Progress.js";
+import { progressData } from "./data/progressData.js";
 
 
 // CODE EXECUTION
@@ -93,6 +95,7 @@ var TxtRotate = function(el, toRotate, period) {
 /* HERO end */
 
 /* ABOUT ME start */
+const progress = new Progress('.about-progress-bar', progressData);
 /* ABOUT ME end */
 
 /* SERVICES start */
