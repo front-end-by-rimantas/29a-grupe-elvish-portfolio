@@ -1,5 +1,5 @@
 .backgroundHM {
-    background-image: url(./img/HireME.png);
+    background-image: url("/img/HireME.png");
     background-size: cover;
     background-position: center center;
     width: 100%;

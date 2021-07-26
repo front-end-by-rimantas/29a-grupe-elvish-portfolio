@@ -12,6 +12,8 @@ import { renderClient } from "./client/client.js";
 import { showSlides } from "./client/slideShowFunction.js";
 import { Education } from "./education/Education.js";
 import { educationData } from "./data/educationData.js";
+import { Services } from "./services/Services.js";
+import { servicesData } from "./data/servicesData.js";
 
 
 // CODE EXECUTION
@@ -94,6 +96,7 @@ var TxtRotate = function(el, toRotate, period) {
 /* ABOUT ME end */
 
 /* SERVICES start */
+const services = new Services('services_box', servicesData);
 /* SERVICES end */
 
 /* WORKING HOURS start */
