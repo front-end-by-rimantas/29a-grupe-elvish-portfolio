@@ -8,17 +8,28 @@
     <title>Elvish | Responsive Bootstrap 4 Personal Template</title>
     <link rel="shortcut icon" href="./img/favicon-32x32.png">
     <link rel="stylesheet" href="./css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6a296c83b0.js" crossorigin="anonymous"></script>    
 </head>
 
 <body>
     <!-- HEADER start -->
+    <header class="container main-header transparent" id="main_header">
+        <div class="row">
+            <div class="col-12">
+                <a href=""> <img id="logo_dark" class="logo-dark" src="./img/elvish-nav-logo-dark.png" alt="logo-dark"></a>
+                <a href=""> <img id="logo_light" class="logo-light" src="./img/elvish-nav-logo-light.png" alt="logo-light"></a>
+                <nav>
+                </nav>
+            </div>
+        </div>
+    </header>
     <!-- HEADER end -->
 
     <!-- HERO start -->
-        <section class="hero">
+    <section class="container hero" id="hero">
         <div class="overlay-hero"></div>
-        <div id="particles-js" class="fl">
+        <div id="particles-js" class="row fl">
             <div class="fl screen-center text-style col-12">
                 <div class="title-clm">
                     <div class="Hello"  >
@@ -29,7 +40,7 @@
                         <span 
                             class="screen-center txt-rotate dinamic-text-style" 
                             data-period="2000"
-                            data-rotate='[ "A Developer.","A Designer.", "Elivish Walters."]'>
+                            data-rotate='[ "A Developer.","A Designer.", "Elvish Walters."]'>
                         </span>
                         
                     </div>
@@ -48,7 +59,7 @@
     <!-- HERO end -->
 
     <!-- ABOUT ME start -->
-      <section class="container about-me">
+      <section class="container about-me" id="about-me">
         <div class="row">
             <div class="col-12 col-lg-8 col-xl-6 text-center title">
                 <h2 class="h2"><span class="bold">About</span> Me</h2>
@@ -61,10 +72,10 @@
             </div>
         </div>
 
-        <div class="row about-me-title">
+        <div class="row about-me-title" >
             <div class="col-12 col-lg-10 col-xl-10 text-center about-hello">
             <div class="elvish-logo">
-                <img src="./img/elvish-logo.png" alt="elvish-logo">
+                <img src="./img/about-me-elvish-logo.png" alt="elvish-logo">
             </div>
             <h2 class="h2">Hello! <span class="bold">I'M Elvish Walters.</span></h2>
             <ul>
@@ -80,51 +91,12 @@
                 </div>
         </div>
         <div class="row about-progress-bar">
-            <div  class="col-12 col-lg-6">
-                <h4>Development <span>80%</span></h1>
-                <div  class="myProgress">
-                    <div style="width:80% ;" class="myBar"></div>
-                </div>
-              </div>
-            <div class="col-12 col-lg-6">
-                <h4>Html <span>96%</span></h1>
-                <div class="myProgress">
-                    <div  style="width:96% ;"class="myBar"></div>
-                </div>
-              </div>
-            <div class="col-12 col-lg-6">
-                <h4>WordPress <span>59%</span></h1>
-                <div class="myProgress">
-                    <div style="width:59% ;" class="myBar"></div>
-                </div>
-              </div>
-            <div class="col-12 col-lg-6">
-                <h4>Css <span>70%</span></h1>
-                <div class="myProgress">
-                    <div style="width:70% ;" class="myBar"></div>
-                </div>
-              </div>
-            <div class="col-12 col-lg-6">
-                <h4>Photoshop <span>88%</span></h1>
-                <div class="myProgress">
-                    <div style="width:88% ;" class="myBar"></div>
-                </div>
-              </div>
-            <div class="col-12 col-lg-6">
-                <h4>Asp.net <span>58%</span></h1>
-                <div class="myProgress">
-                    <div style="width:58% ;" class="myBar"></div>
-                </div>
-              </div>
-
-
-
         </div>
     </section>
     <!-- ABOUT ME end -->
 
     <!-- SERVICES start -->
-    <section class="container services">
+    <section class="container services" id="services" >
         <div class="row ">
             <div class="col-12 col-lg-8 col-xl-6 text-center title">
                 <h2 class="h2">Our <span class="bold">Services</span></h2>
@@ -134,43 +106,13 @@
                 <p class="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-4 item-center text-center border">
-                <img src="./img/graphic-design.png" alt="icon" class="icon" />
-                <h3 class="h3">Graphic Design</h3>
-                <p class="p">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
-            </div>
-            <div class="col-12 col-lg-4 item-center text-center border">
-                <img src="./img/unlimited-color.png" alt="icon" class="icon" />
-                <h3 class="h3">Unlimited Color</h3>
-                <p class="p">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
-            </div>
-            <div class="col-12 col-lg-4 item-center text-center border">
-                <img src="./img/media-marketing.png" alt="icon" class="icon" />
-                <h3 class="h3">Media Marketing</h3>
-                <p class="p">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
-            </div>
-            <div class="col-12 col-lg-4 item-center text-center border">
-                <img src="./img/unlimited-wifi.png" alt="icon" class="icon" />
-                <h3 class="h3">Unlimited Wifi</h3>
-                <p class="p">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
-            </div>
-            <div class="col-12 col-lg-4 item-center text-center border">
-                <img src="./img/responsive-design.png" alt="icon" class="icon" />
-                <h3 class="h3">Responsive Design</h3>
-                <p class="p">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
-            </div>
-            <div class="col-12 col-lg-4 item-center text-center border">
-                <img src="./img/easy.png" alt="icon" class="icon" />
-                <h3 class="h3">Easy to customize</h3>
-                <p class="p">The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.</p>
-            </div>
+        <div class="row" id="services_box">
         </div>
     </section>
     <!-- SERVICES end -->
 
     <!-- WORKING HOURS start -->
-    <section class="working-hours">
+    <section class="working-hours" id="working-hours">
         <div class="overlay"></div>
         <div class="container work">
             <div class="row">
@@ -200,7 +142,7 @@
     <!-- WORKING HOURS end -->
 
     <!-- EDUCATION start -->
-    <section class="container education">
+    <section class="container education" id="education">
         <div class="row ">
             <div class="col-12 col-lg-8 col-xl-6 text-center title">
                 <h2 class="h2"><span class="bold">Education &amp; Experience</span></h2>
@@ -210,37 +152,7 @@
                 <p class="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-5 border-ed">
-                <h4 class="h4 small">2010 - 2014</h4>
-                <h4 class="h4">2010 Bachelore at Cambridge University</h4>
-                <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="col-12 col-lg-5 lg-5-start border-ed">
-                <h4 class="h4 small">2010 - 2014</h4>
-                <h4 class="h4">Senior Graphic Designer</h4>
-                <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="col-12 col-lg-5 border-ed">
-                <h4 class="h4 small">2014 - 2016</h4>
-                <h4 class="h4">Master in Computer Science</h3>
-                <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="col-12 col-lg-5 lg-5-start border-ed">
-                <h4 class="h4 small">2014 - 2016</h4>
-                <h4 class="h4">Web Developer</h3>
-                <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="col-12 col-lg-5 border-ed">
-                <h4 class="h4 small">2016 - 2018</h4>
-                <h4 class="h4">UI/UX Designer</h3>
-                <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            </div>
-            <div class="col-12 col-lg-5 lg-5-start border-ed">
-                <h4 class="h4 small">2018 - 2021</h4>
-                <h4 class="h4">Freelancer and ThemeForest</h3>
-                <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-            </div>
+        <div class="row" id="education_box">
         </div>
     </section>
     <!-- EDUCATION end -->
@@ -253,16 +165,109 @@
         <button type="button">Hire me !</button>
       </div>
      </div>
+
      </div>
+
+    </div>
+
+
     <!-- HIRE ME end -->
 
     <!-- OUR WORK start -->
+    <section class="container work" id="work">
+        <div class="row">
+            <div class="col-12 col-lg-8 col-xl-6 text-center title">
+                <h2 class="h2">Our <span class="bold">Work</span></h2>
+                <div class="main-title-border">
+                    <img src="./img/asterix.png" class="asterix" />
+                </div> 
+                <p class="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+    </section>
     <!-- OUR WORK end -->
 
     <!-- OUR CLIENT start -->
+<section id="client" class="container">
+    <div class="background-rgb"></div>
+        <div class="row">
+            <div class="col-12 col-lg-8 col-xl-6 text-center title col-client">
+                <h1 class="h1-client">Our Client</h1>
+                <div class="main-title-border">
+                    <img src="./img/asterix.png" alt="asterix" class="asterix-client">
+                </div>
+                <p class="p p-client">It is a long established 
+                    fact that a reader will be distracted 
+                    by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+    <div class="row">
+        <div id="client_dynamic" class="col-12 col-lg-8 col-xl-6 text-center title col-client">  
+            <div>
+                
+              </div> 
+        </div>
+    </div>
+    <div class="row">
+        <div  class="col-12 col-lg-8 col-xl-6 text-center title col-client">  
+            <div>
+                <a id="slide1" href="#slide1"span class="dot" ></a>
+                <a id="slide2" href="#slide2"span class="dot" ></a>
+                <a id="slide3" href="#slide3"span class="dot" ></a>
+            
+              </div> 
+              </div> 
+        </div>
+    </div>
+    
+</section>
     <!-- OUR CLIENT end -->
 
     <!-- TRUSTED BY start -->
+    <section class="container" id="trusted-by">
+        <div class="row ">
+            <div class="col-12 col-lg-8 col-xl-6 text-center title">
+                <h2 class="h2">Trusted by <span class="bold">Great People</span></h2>
+                <div class="main-title-border">
+                    <img src="./img/asterix.png" class="asterix" />
+                </div> 
+                <p class="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/1.png" alt="freash-beans">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/2.png" alt="fisherman">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/3.png" alt="mountain-bike">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/4.png" alt="mountain-winter-sports">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/5.png" alt="chocolate">
+            </div>
+            <div class="col-12 col-trusted col-lg-2">
+                <img src="./img/trusted-by/6.png" alt="market">
+            </div>
+            
+
+
+
+                
+                
+                
+                
+        </div>
+            
+
+
+            
+    </section>
     <!-- TRUSTED BY end -->
 
     <!-- SUBSCRIBE start -->
@@ -341,11 +346,28 @@
     <!-- GET IN TOUCH end -->
 
     <!-- FOOTER start -->
+    <div class="container" id="footer">
+        <div class="row row-footer">
+            <div class="col-12 col-sm-6 footer paragraph"><p class="footer-paragraph"> 2018 &#169; Elvish . Design by ThemesBoss.</p>
+            </div>
+                    
+                 <div class="col-12 col-sm-6 footer socials">
+                    <div class="footer-socials">
+                        <a class="footer-button" href="#"><i class="fa fa-facebook fa-xs"></i></a>
+                        <a class="footer-button" href="#"><i class="fa fa-twitter fa-xs"></i></a>
+                        <a class="footer-button" href="#"><i class="fa fa-linkedin fa-xs"></i></a>
+                        <a class="footer-button" href="#"><i class="fa fa-google-plus fa-xs"></i></a>
+                    </div>
+                </div>
+        </div>
+    
+        </div>
+    </div>
     <!-- FOOTER end -->
     
-    <script src="/node_modules/particles.js/particles.js"></script>
+    <script src="./particles.js/particles.js"></script>
     <script>
-          particlesJS.load('particles-js','../particles.json');
+          particlesJS.load('particles-js','./particles.json');
     </script>
     <script src="./js/home.js" type="module" defer></script>
 </body>

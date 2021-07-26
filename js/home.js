@@ -1,10 +1,39 @@
 // IMPORTS
 import { count1, count2, count3, count4 } from "./data-count.js";
+import { portfolioData } from "./data/portfolioData.js";
+import { Gallery } from "./gallery/Gallery.js";
+import { PortfolioItem } from "./gallery/PortfolioItem.js";
+import { Header } from "./header/Header.js";
+import { headerData } from "./header/headerData.js"; 
+import { headerScrollDetector} from "./header/headerScrollFunction.js"; 
+import { headerStyle } from "./header/headerTransparentStyle.js";
+import { clientData } from "./client/clientData.js";
+import { renderClient } from "./client/client.js";
+import { showSlides } from "./client/slideShowFunction.js";
+import { Education } from "./education/Education.js";
+import { educationData } from "./data/educationData.js";
+import { Services } from "./services/Services.js";
+import { servicesData } from "./data/servicesData.js";
+import { Progress } from "./progress/Progress.js";
+import { progressData } from "./data/progressData.js";
+
 
 // CODE EXECUTION
 
 /* HEADER start */
+
+// kontento generavimas
+const header = new Header(headerData)
+header.init()
+
+// puslapio buvimo vietos nustatymas
+window.addEventListener("scroll", function () {
+  headerScrollDetector();
+  headerStyle()
+})
 /* HEADER end */
+
+
 
 /* HERO start */
 var TxtRotate = function(el, toRotate, period) {
@@ -66,9 +95,11 @@ var TxtRotate = function(el, toRotate, period) {
 /* HERO end */
 
 /* ABOUT ME start */
+const progress = new Progress('.about-progress-bar', progressData);
 /* ABOUT ME end */
 
 /* SERVICES start */
+const services = new Services('services_box', servicesData);
 /* SERVICES end */
 
 /* WORKING HOURS start */
@@ -84,15 +115,20 @@ count4(data4, data4, 'fact-4');
 /* WORKING HOURS end */
 
 /* EDUCATION start */
+const education = new Education("education_box", educationData);
 /* EDUCATION end */
 
 /* HIRE ME start */
 /* HIRE ME end */
 
 /* OUR WORK start */
+const gallery = new Gallery('work', portfolioData, PortfolioItem);
 /* OUR WORK end */
 
 /* OUR CLIENT start */
+renderClient('#client_dynamic', clientData);
+showSlides('#client_dynamic', clientData);
+
 /* OUR CLIENT end */
 
 /* TRUSTED BY start */
