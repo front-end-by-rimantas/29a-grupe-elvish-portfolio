@@ -37,7 +37,7 @@ const headerData = {
     // },
     {
         title:"Contact",
-        href:"#contact",
+        href:"#footer",
         class:""
     },
 ]

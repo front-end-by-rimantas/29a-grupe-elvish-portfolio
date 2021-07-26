@@ -1,21 +1,23 @@
-
+.hamburger.active:after  {
+    display: none;
+}
 
 .hamburger {
     position:absolute;
-    right: 30px;
-    top: 6px;
+    right: 15px;
+    top: 10px;
     display: none;
     }
 .menu-button-black {
     position:absolute;
-    right: 30px;
-    top: 6px;
+    right: 15px;
+    top: 10px;
 
 }
 .menu-button-white {
     position:absolute;
-    right: 30px;
-    top: 6px;
+    right: 15px;
+    top: 10px;
 }
 .menu-button-white.none {
     display: none;
@@ -56,14 +58,6 @@ a {
 .nav-item {
     margin-left: 5rem;
 }
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: black
-}
-
-
 
 .nav-logo {
     font-size: 2.1rem;
