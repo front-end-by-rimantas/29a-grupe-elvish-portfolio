@@ -9,19 +9,19 @@
 .hamburger {
     position:absolute;
     right: 15px;
-    top: 10px;
+    top: 18px;
     display: none;
     }
 .menu-button-black {
     position:absolute;
     right: 15px;
-    top: 10px;
+    top: 15px;
 
 }
 .menu-button-white {
     position:absolute;
     right: 15px;
-    top: 10px;
+    top: 18px;
 }
 .menu-button-white.none {
     display: none;
