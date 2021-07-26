@@ -1,3 +1,7 @@
+.row-hamburger {
+    height: 0;
+}
+
 .hamburger.active:after  {
     display: none;
 }
@@ -71,10 +75,11 @@ a {
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: oldlace;
-        width: 300px;
+        background-color: rgb(199, 199, 199);
+        color: black;
+        width: 100%;
         border-radius: 10px;
-        text-align: center;
+        
         transition: 0.3s;
         padding: 30px;
         box-shadow:
