@@ -1,0 +1,51 @@
+.TuchLogos {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    font-size: 17px ;
+}
+.TuchLogos > p {
+    color: #6C757D;
+    font-size: 17px;
+    line-height: 1.5
+}
+
+.CForm {
+   
+    
+}
+
+.form {
+   
+
+}
+
+.form-row > label {
+    font-size: 24px;
+    width: 52%;
+}
+
+.form-row > input {
+    width: 45%;
+    line-height: 40px;
+    font-size: 20px;
+    border: gray;
+    border-bottom: 1px solid #ccc;
+}
+.form-row > input:last-of-type {
+    width: 100%;
+    
+}
+
+
+.form-row > textarea {
+    color: red;
+    width: 100%;
+    padding: 40px;
+}
+
+
+
+
