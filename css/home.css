@@ -15,10 +15,14 @@
 @import './components/about-me.css';
 @import './components/education.css';
 @import './components/working-hours.css';
+
+@import './components/get-in-tuch.css';
+
 @import './components/our-client.css';
 @import './components/gallery.css';
 @import './components/trusted-by.css';
 @import './components/footer.css';
+
 
 
 

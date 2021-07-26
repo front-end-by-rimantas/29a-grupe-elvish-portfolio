@@ -19,3 +19,25 @@
     background-color: white;
     color: black;
 }
+
+.form > button {
+    background-color: black;
+    float: right;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    text-decoration: solid;
+    border-color:black;
+    color: white;
+    padding: 9px;
+    font-style: normal;
+    cursor:pointer;
+    transition-duration: 1s;
+    border-radius: 7px;
+}
+.form > button:hover {
+    background-color: white;
+    color: black;
+    
+}
