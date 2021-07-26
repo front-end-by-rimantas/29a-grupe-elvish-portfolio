@@ -10,6 +10,12 @@ import { headerStyle } from "./header/headerTransparentStyle.js";
 import { clientData } from "./client/clientData.js";
 import { renderClient } from "./client/client.js";
 import { showSlides } from "./client/slideShowFunction.js";
+import { Education } from "./education/Education.js";
+import { educationData } from "./data/educationData.js";
+import { Services } from "./services/Services.js";
+import { servicesData } from "./data/servicesData.js";
+import { Progress } from "./progress/Progress.js";
+import { progressData } from "./data/progressData.js";
 
 
 // CODE EXECUTION
@@ -89,9 +95,11 @@ var TxtRotate = function(el, toRotate, period) {
 /* HERO end */
 
 /* ABOUT ME start */
+const progress = new Progress('.about-progress-bar', progressData);
 /* ABOUT ME end */
 
 /* SERVICES start */
+const services = new Services('services_box', servicesData);
 /* SERVICES end */
 
 /* WORKING HOURS start */
@@ -107,6 +115,7 @@ count4(data4, data4, 'fact-4');
 /* WORKING HOURS end */
 
 /* EDUCATION start */
+const education = new Education("education_box", educationData);
 /* EDUCATION end */
 
 /* HIRE ME start */
