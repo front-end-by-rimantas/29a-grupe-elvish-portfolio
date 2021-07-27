@@ -21,11 +21,18 @@
     display: inline-block;
     width: 100%;
 }
+.form-row {
+    padding: 15px;
+    
+}
+
 
 .form-row > label {
-    font-size: 24px;
-    width: 40%;
-    
+    font-size: 17px;
+    color: black;
+   
+    text-decoration: solid;
+    width: 100%;
 }
 
 .form-row > input {
@@ -34,9 +41,7 @@
     line-height: 40px;
     font-size: 20px;
     border: 3px solid #ccc;
-    
-    
-    
+    text-transform: capitalize;
 }
 .form-row:nth-child(1) {
     display: flex;
@@ -51,7 +56,6 @@
     width: 49%;
     float: right;
     display: inline;
-    
     
 }
 .form-row:nth-child(3) > input {
