@@ -1,5 +1,5 @@
 const servicesData = {
-    path: '/img/services/',
+    path: './img/services/',
     list: [
         {
             img: 'graphic-design.png',
