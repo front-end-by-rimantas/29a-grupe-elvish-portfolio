@@ -231,8 +231,14 @@ class Gallery {
                 }
                 this.tempItems = this.tempTemp;
                 this.renderWorks();
-                // tagDom.classList.add('.active');
-                // this.rederFilter();
+
+                for (const isTagActive of this.tagsDOM) {
+                    if (isTagActive.classList.contains('active')) {
+                        isTagActive.classList.remove('active');
+                    }
+                }
+
+                tagDom.classList.add('active');
             })
         }
         this.DOM.querySelector('.all').addEventListener('click', () => {
