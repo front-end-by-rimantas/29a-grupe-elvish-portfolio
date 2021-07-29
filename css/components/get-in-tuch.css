@@ -14,38 +14,49 @@
 
 .CForm {
    width: 100%;
-    
+   row-gap: 10px; 
 }
 
 .form {
     display: inline-block;
     width: 100%;
-
+}
+.form-row {
+    padding: 15px;
+    
 }
 
+
 .form-row > label {
-    font-size: 24px;
-    width: 5%;
-    
+    font-size: 17px;
+    color: black;
+   
+    text-decoration: solid;
+    width: 100%;
 }
 
 .form-row > input {
     display: inline-block;
-    width: 40%;
+    width: 100%;
     line-height: 40px;
     font-size: 20px;
     border: 3px solid #ccc;
-    gap: 6%;
-    
-    
+    text-transform: capitalize;
 }
 .form-row:nth-child(1) {
-    
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    float: left;
 }
 
 .form-row:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    float: right;
+    display: inline;
     
-   
 }
 .form-row:nth-child(3) > input {
     width: 100%;
@@ -54,7 +65,7 @@
 
 
 .form-row > textarea {
-    color: red;
+    text-transform: capitalize;
     width: 100%;
     border: 3px solid #ccc;
     font-size: 20px;
