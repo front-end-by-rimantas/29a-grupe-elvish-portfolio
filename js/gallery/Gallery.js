@@ -139,6 +139,7 @@ class Gallery {
     }
     
     collectItemsRandom() {
+        this.filteredItems = [];
         while (this.filteredItems.length < this.maxItems &&
             this.filteredItems.length < this.collectedItems.length) {
             const rand = Math.floor(Math.random() * this.collectedItems.length);
@@ -189,7 +190,8 @@ class Gallery {
         if (tags.length === 0) {
             return '';
         }
-        let tagsHTML = `<div class="tag active all">All</div>`;
+        let tagsHTML = `<div class="tag active all">All</div><div class="tag more">More<i class="fa fa-refresh icon-fa" aria-hidden="true"></i>
+        </div>`;
         for (let tag of tags) {
             tagsHTML += `<div class="tag">${tag}</div>`;
         };
@@ -242,6 +244,12 @@ class Gallery {
             })
         }
         this.DOM.querySelector('.all').addEventListener('click', () => {
+            this.tempItems = this.filteredItems;
+            this.renderWorks();
+        })
+        this.DOM.querySelector('.more').addEventListener('click', () => {
+            this.collectItems();
+            console.log(this.filteredItems);
             this.tempItems = this.filteredItems;
             this.renderWorks();
         })
