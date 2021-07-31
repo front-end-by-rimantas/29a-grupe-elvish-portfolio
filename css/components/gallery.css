@@ -18,6 +18,7 @@
     background-color: #fff;
     transition: all 0.5s;
     text-transform: capitalize;
+    font-weight: bold;
 }
 .work .tag:hover, .work .tag.active {
     background-color: #222;
